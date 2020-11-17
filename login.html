@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<title>login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+<body class="w3-theme-col">
+
+<div class="w3-content " style="max-width:1250px;margin-top:70px;">
+<div class="w3-row " style="margin:50px 0">
+    <div class="w3-col l6 m12   one">
+        <div class="w3-black">
+        <div style="padding:158px 0px 158px 0px">
+            <div class="w3-container ">
+                <div class=" w3-center" >
+                    <img src="images/emlogo.jpeg" class=" w3-image login-page-logo" >
+                </div>
+            </div>
+        </div>
+        </div> 
+    </div>
+
+<div class="w3-col l6 m12   w3-card w3-white two">
+    <div style="padding:64px 32px 64px 32px" class="haha">
+        <div class="w3-container ">
+            <h1 class="w3-theme-text-col">Login</h1>
+            <hr style="width:60px;border:3px solid rgb(160, 117, 62)">
+        </div>
+        <div class="w3-container">
+          <form action="/action_page.php" target="_blank">
+              <p><input class="w3-input w3-padding w3-border" type="text" placeholder="Name" required name="Name"></p>
+              <p><input class="w3-input w3-padding w3-border" type="password" placeholder="Password" required name="People"></p>
+              <p><button class="w3-button w3-theme-col w3-text-white w3-round" type="submit">Login &nbsp;<i class="fa fa-lock"></i></button></p>
+            </form>
+          </div>
+    </div>    
+</div>
+</div>
+</div><!--content-->
+<script type="text/javascript">
+
+    TweenMax.from(".two", 0.6, {
+      delay: 0.5,
+      width: 0,
+      ease: Expo.easeInOut
+    })
+    TweenMax.from(".w3-container", 0.6, {
+        delay: 1.5,
+      opacity: 0,
+      x: -20,
+    })
+    
+</script>
+</body>
+</html>
